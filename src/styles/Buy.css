@@ -1,0 +1,130 @@
+.buy-section {
+    display: flex;
+    position: relative;
+    top: -30px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #146ef5;
+    max-width: 600px;
+    border: 1px solid black; 
+    border-radius: 20px;
+    margin: auto;
+    height: 900px;
+    overflow: hidden;
+}
+
+.buy-container button {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.buy-logo-3 {
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buy-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+.buy-container .buy-logo {
+    min-width: 1284px;
+    max-width: 1284px;
+    margin-top: 100px;
+}
+
+.buy-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    max-width: 600px;
+    border: 1px solid black; 
+    border-radius: 20px;
+    margin: auto;
+    height: 900px;
+    overflow: hidden;
+}
+
+.buy-container-2 button {
+    border: none;
+    background-color: #5640ff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.buy-container-2 .buy-logo-2 {
+    height: 500px;
+    margin-top: 110px;
+}
+
+.buy-container-2 .buy-logo-1 {
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buy-text-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin-top: 100px;
+}
+
+.buy-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.buy-container:hover {
+    transform: scale(0.9);
+}
+
+.buy-container-2 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.buy-container-2:hover {
+    transform: scale(0.9);
+}
+
+.buy-text h1 {
+    margin-top: 20px;
+}
+
+.buy-text p {
+    margin-top: 20px;
+}
+
+.buy-text-2 h1 {
+    margin-top: 20px;
+}
+
+.buy-text-2 p {
+    margin-top: 20px;
+}

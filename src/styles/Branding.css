@@ -1,0 +1,299 @@
+.branding-section {
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+}
+
+.branding-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.branding-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding-header-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    border: 1px solid black; 
+    border-radius: 20px; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.branding-header-text h1 {
+    font-size: 45px;
+}
+
+.branding-header-text p {
+    color: #3B3A3C;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.branding-header-text button {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+}
+
+.branding-header-text button:hover {
+    transform: scale(0.9); 
+}
+
+.branding-header-text {
+    margin: auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.branding-notification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding-notification-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    border: 1px solid black; 
+    border-radius: 20px; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.branding-notification-text h1 {
+    font-size: 45px;
+    text-align: left; 
+    align-self: flex-start;
+}
+
+.branding-notification-text p {
+    color: #3B3A3C;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.branding-notification-text button {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+}
+
+.branding-notification-text button:hover {
+    transform: scale(0.9); 
+}
+
+.branding-notification-text {
+    margin: auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.branding-custom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding-custom-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    border: 1px solid black; 
+    border-radius: 20px; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.branding-custom-text h1 {
+    font-size: 45px;
+    text-align: left; 
+    align-self: flex-start;
+}
+
+.branding-custom-text p {
+    color: #3B3A3C;
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: left; 
+    align-self: flex-start;
+}
+
+.branding-custom-button {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+}
+
+.branding-custom-button-1 {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+}
+
+.branding-custom-button:hover {
+    transform: scale(0.9); 
+}
+
+.branding-custom-button-1:hover {
+    transform: scale(0.9); 
+}
+
+.branding-custom-text {
+    margin: auto; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.branding-custom-button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.branding-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding-social-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    border: 1px solid black; 
+    border-radius: 20px; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.branding-social-text h1 {
+    font-size: 45px;
+    align-self: flex-start; 
+    text-align: left;
+}
+
+.branding-social-text p {
+    color: #3B3A3C;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.branding-social-text button {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+}
+
+.branding-social-text button:hover {
+    transform: scale(0.9); 
+}
+
+.branding-social-text {
+    margin: auto; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.branding-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding-email-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    border: 1px solid black; 
+    border-radius: 20px; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.branding-email-text h1 {
+    font-size: 45px;
+    text-align: left;
+    align-self: start;
+}
+
+.branding-email-text p {
+    color: #3B3A3C;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.branding-email-text button {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: start;
+}
+
+.branding-email-text button:hover {
+    transform: scale(0.9); 
+}
+
+.branding-email-text {
+    margin: auto; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}

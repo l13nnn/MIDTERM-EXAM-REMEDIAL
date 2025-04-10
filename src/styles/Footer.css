@@ -1,0 +1,120 @@
+.footer-section {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.footer-button {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-button-1 {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+}
+
+.footer-button-1:hover {
+    transform: scale(0.9); 
+}
+
+.footer-button-2 {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+}
+
+.footer-button-2:hover {
+    transform: scale(0.9); 
+}
+
+.footer-copyright {
+    display: flex;
+}
+
+.footer-copyright-list {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.footer-copyright-list ul li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-copyright-list ul li:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.footer-copyright-list ul {
+    margin-top: 60px;
+}
+
+.footer-copyright-image {
+    margin-top: 60px;
+}
+
+.footer-copyright-image p {
+    margin-top: 20px;
+}
+
+.footer-copyright-span {
+    text-decoration: underline;
+}
+
+.footer-copyright-image input {
+    padding: 20px;
+    border-radius: 25px;
+    width: 300px;
+}
+
+.footer-copyright-image button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    margin-top: 20px;
+    position: relative;
+    right: 110px;
+}
