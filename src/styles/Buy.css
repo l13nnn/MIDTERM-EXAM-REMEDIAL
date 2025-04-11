@@ -128,3 +128,74 @@
 .buy-text-2 p {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .buy-section {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .buy-container, 
+    .buy-container-2 {
+        max-width: 90%;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .buy-text, 
+    .buy-text-2 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .buy-container .buy-logo, 
+    .buy-container-2 .buy-logo-2 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .buy-logo-3, 
+    .buy-container-2 .buy-logo-1 {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .buy-container button, 
+    .buy-container-2 button {
+        font-size: 0.8em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy-container,
+    .buy-container-2 {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .buy-text, 
+    .buy-text-2 {
+        font-size: 0.9em;
+    }
+
+    .buy-container .buy-logo, 
+    .buy-container-2 .buy-logo-2 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .buy-logo-3, 
+    .buy-container-2 .buy-logo-1 {
+        width: 40%;
+    }
+
+    .buy-container button, 
+    .buy-container-2 button {
+        font-size: 0.7em;
+        padding: 8px 16px;
+    }
+}

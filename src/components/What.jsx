@@ -1,7 +1,115 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/What.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function What() {
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.what-container',
+            { 
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: '.what-container',
+                    start: 'top 80%',
+                    end: 'top 60%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.what-image',
+            { 
+                opacity: 0,
+                y: -100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.what-image',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.what-figma-section',
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.what-figma-section',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.looking-section',
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.looking-section',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.buy-button',
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.buy-button',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
 
     return (
         <>

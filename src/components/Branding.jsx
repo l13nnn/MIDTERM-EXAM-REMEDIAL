@@ -1,7 +1,138 @@
-import React from 'react';
+import React, { useEffect} from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/Branding.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Utility() {
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.branding-container',
+            { 
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: '.branding-container',
+                    start: 'top 80%',
+                    end: 'top 60%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.branding-header',
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.branding-header',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.branding-notification',
+            { 
+                opacity: 0,
+                y: -100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.branding-notification',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.branding-custom',
+            { 
+                opacity: 0,
+                y: -100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.branding-custom',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.branding-social',
+            { 
+                opacity: 0,
+                y: -100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.branding-social',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.branding-email',
+            { 
+                opacity: 0,
+                y: -100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.branding-email',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
 
     return (
         <>

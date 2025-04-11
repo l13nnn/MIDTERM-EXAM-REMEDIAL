@@ -1,7 +1,75 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/Utility.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Utility() {
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.utility-container',
+            { 
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: '.utility-container',
+                    start: 'top 80%',
+                    end: 'top 60%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.utility-image',
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.utility-image',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+
+        gsap.fromTo(
+            '.utility-button',
+            { 
+                opacity: 0,
+                y: -100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.5,
+                scrollTrigger: {
+                    trigger: '.utility-button',
+                    start: 'top 80%',
+                    end: 'top 40%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
 
     return (    
         <>

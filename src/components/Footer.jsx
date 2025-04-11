@@ -1,7 +1,53 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/Footer.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Footer() {
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.footer-container',
+            { 
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: '.footer-container',
+                    start: 'top 80%',
+                    end: 'top 60%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.footer-copyright',
+            { 
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: '.footer-copyright',
+                    start: 'top 80%',
+                    end: 'top 60%',
+                    scrub: true,
+                    once: true,
+                },
+            }
+        );
+    }, []);
 
     return (
         <>
